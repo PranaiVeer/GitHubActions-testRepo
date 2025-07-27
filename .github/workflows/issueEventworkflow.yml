@@ -6,6 +6,3 @@ jobs:
         steps:
             - name: Output Issue Title
               run: echo "Issue title is ${{ toJson(github.event.issue.title) }}"
-
-            - name: Output Issue Title without JSON
-              run: echo "Issue title without JSON format is ${{ github.event.issue.title }}"
